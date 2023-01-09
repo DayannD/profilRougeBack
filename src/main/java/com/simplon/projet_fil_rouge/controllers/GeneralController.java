@@ -34,7 +34,7 @@ public class GeneralController {
         return books;
     }
 
-    @RequestMapping(path = "/books/news", method = RequestMethod.GET)
+   /* @RequestMapping(path = "/books/news", method = RequestMethod.GET)
     @ResponseBody
     private List<Book> getNewsBooks() {
         Iterable<Book> iterableBooks = bookRepository.findAll();
@@ -52,12 +52,25 @@ public class GeneralController {
         iterableBooks.forEach(books::add);
         Comparator<Book> byVoteAverage = Comparator.comparing(Book::getVotesAverage);
         return books.stream().sorted(byVoteAverage.reversed()).toList();
-    }
+    }*/
 
     @RequestMapping(path="/books/delete",  method = RequestMethod.GET)
     @ResponseBody
     private boolean deleteAllBooks() {
         bookRepository.deleteAll();
         return true;
+    }
+
+    @RequestMapping(path = "/books/news", method = RequestMethod.GET)
+    @ResponseBody
+    private List<Book> getBooksbyNew() {
+        return bookRepository.findXBooksSortedByDateAdded(5);
+    }
+
+    @RequestMapping(path = "/books/votes", method = RequestMethod.GET)
+    @ResponseBody
+    private List<Book> getBooksbyVotes() {
+        //return bookRepository.findByTitle("La voie des rois");
+        return bookRepository.findTop4ByOrderByVotesAverageDesc();
     }
 }
