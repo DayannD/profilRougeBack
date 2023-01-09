@@ -18,5 +18,5 @@ public class Image {
     private List<Book> books;
 
     @ManyToMany
-    private List<Group> groups;
+    private List<GroupBook> groups;
 }

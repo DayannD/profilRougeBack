@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Getter @Setter
 public class Book {
@@ -15,9 +17,11 @@ public class Book {
 
     private String title;
     private String author;
+    private String coverPath;
     @Enumerated(EnumType.ORDINAL)
     private GenreBook genre;
     private String summary;
     private int votesAverage;
+    private LocalDate dateAdded;
 
 }

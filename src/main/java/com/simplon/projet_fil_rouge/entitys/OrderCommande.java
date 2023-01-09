@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Entity
 @Getter @Setter
-public class Order {
+public class OrderCommande {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
