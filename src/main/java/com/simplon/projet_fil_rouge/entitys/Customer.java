@@ -17,6 +17,6 @@ public class Customer {
     private String email;
     private String adress;
 
-    @ManyToOne
+    @ManyToOne //Ou ManyToMany
     private Book book;
 }

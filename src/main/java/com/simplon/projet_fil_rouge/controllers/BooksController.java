@@ -2,20 +2,22 @@ package com.simplon.projet_fil_rouge.controllers;
 
 import com.simplon.projet_fil_rouge.entitys.Book;
 import com.simplon.projet_fil_rouge.repositorys.BookRepository;
+import com.simplon.projet_fil_rouge.repositorys.GroupBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.*;
 
+@CrossOrigin(origins = "http://localhost:4200/")
 @Controller
-public class GeneralController {
+public class BooksController {
 
     @Autowired
     BookRepository bookRepository;
+    @Autowired
+    GroupBookRepository groupBookRepository;
 
     @RequestMapping(path = "/book", method = RequestMethod.GET)
     @ResponseBody //Sans le réponse body ça envoie une référence à book et donc problème de boucle infinie
@@ -57,6 +59,7 @@ public class GeneralController {
     @RequestMapping(path="/books/delete",  method = RequestMethod.GET)
     @ResponseBody
     private boolean deleteAllBooks() {
+        groupBookRepository.deleteAll();
         bookRepository.deleteAll();
         return true;
     }
@@ -72,5 +75,20 @@ public class GeneralController {
     private List<Book> getBooksbyVotes() {
         //return bookRepository.findByTitle("La voie des rois");
         return bookRepository.findTop4ByOrderByVotesAverageDesc();
+    }
+
+    @RequestMapping(path = "/createBook", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean createBook(@RequestBody Book bookToSave) {
+        Book book = new Book();
+        book.setTitle(bookToSave.getTitle());
+        book.setAuthor(bookToSave.getAuthor());
+        book.setGenre(bookToSave.getGenre());
+        book.setSummary(bookToSave.getSummary());
+        book.setCoverPath(bookToSave.getCoverPath());
+        book.setVotesAverage(0);
+        book.setDateAdded(LocalDate.now());
+        bookRepository.save(book);
+        return true;
     }
 }

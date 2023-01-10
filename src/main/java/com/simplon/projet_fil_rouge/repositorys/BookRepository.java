@@ -12,7 +12,7 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<Book, Long> {
     @Query(value = "SELECT b FROM Book b ORDER BY b.dateAdded DESC LIMIT :x")
     List<Book> findXBooksSortedByDateAdded(@Param("x") Integer x);
-    List<Book> findByTitle(String Title);
+    Book findByTitle(String Title);
 //    List<Book> findTop5ByOrderByDateAddedDesc();
     List<Book> findTop4ByOrderByVotesAverageDesc();
 }

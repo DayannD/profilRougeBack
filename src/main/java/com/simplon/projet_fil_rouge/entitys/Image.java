@@ -13,6 +13,8 @@ public class Image {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    private String path;
+
     //Either Books or groups doit être non null
     @ManyToMany
     private List<Book> books;
