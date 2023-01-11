@@ -20,6 +20,7 @@ public class Book {
     private String coverPath;
     @Enumerated(EnumType.ORDINAL)
     private GenreBook genre;
+    @Column(length = 5000)
     private String summary;
     private int votesAverage;
     private LocalDate dateAdded;

@@ -89,33 +89,56 @@ public class ProjetFilRougeApplication {
 		books[0].setTitle("La voie des rois");
 		books[0].setAuthor("Brandon Sanderson");
 		books[0].setCoverPath(pathCovers + "les-archives-de-roshar-tome-1-la-voie-des-rois-i-619268.jpg");
-		books[0].setSummary("Roshar, monde de pierres et de tempêtes. Des siècles ont passé depuis...");
+		books[0].setSummary("Roshar, monde de pierres et de tempêtes. Des siècles ont passé depuis la chute des Chevaliers Radieux, mais leurs avatars, des épées et des armures mystiques qui transforment des hommes ordinaires en guerriers invincibles, sont toujours là. Pour elles, les hommes s'entre-déchirent. Dans le paysage dévasté des Plaines Brisées, Kaladin, enrôlé de force, lutte dans une guerre insensée qui dure depuis dix ans, où plusieurs armées combattent séparément un unique ennemi.\n" +
+				"\n" +
+				"Dalinar Kholin, chef de l'une de ces armées, est fasciné par un texte ancien appelé La Voie des Rois. Hanté par des visions des temps anciens, il commence à douter de sa santé mentale. De l'autre côté de l'océan, la jeune et ambivalente Shallan apprend la magie, et découvre certains secrets des Chevaliers Radieux."
+		);
 		books[0].setGenre(GenreBook.FANTASY);
 		//Series
 		books[1].setTitle("Qadehar le sorcier");
 		books[1].setAuthor("Erik L'Homme");
 		books[1].setCoverPath(pathCovers + "le-livre-des-etoiles-tome-1-qadehar-le-sorcier-287581.jpg");
-		books[1].setSummary("Yssemble un pays ...");
+		books[1].setSummary("Ys semble un pays en tous points pareil au nôtre, à la différence qu'on y côtoie, entre ordinateurs et salles de cinéma, chevaliers en armure et sorciers aux pouvoirs étonnants.\n" +
+				"\n" +
+				"Guillemot de Troïl est un garçon d'Ys, enfant timide et rêveur. D'où lui viennent ses dons exceptionnels pour la sorcellerie que lui enseigne patiemment Maître Qadehar ? Qu'est devenu Le Livre des Étoiles, dérobé voilà longtemps et qui renferme le secret de sortilèges puissants ? Pourquoi Agathe de Balangru, sa pire ennemi, a-t-elle été enlevée ?\n" +
+				"\n" +
+				"Dans sa quête de la vérité, Guillemot entraîne avec lui ses amis de toujours, Romaric, Gontrand, Coralie et l'intrépide Ambre. Ensemble, ils franchissent la Porte qui conduit dans le Monde Incertain...");
 		books[1].setGenre(GenreBook.FANTASY);
 		books[2].setTitle("Le neveu du magicien");
 		books[2].setAuthor("C. S. Lewis");
 		books[2].setCoverPath(pathCovers + "le-monde-de-narnia-tome-1-le-neveu-du-magicien-48664.jpg");
-		books[2].setSummary("Polly trouve parfois...");
+		books[2].setSummary("Polly trouve parfois que la vie à Londres n'est guère passionnante .. jusqu'au jour où elle rencontre son nouveau voisin, Digory. Il vit avec sa mère, gravement malade, et un vieil oncle au comportement étrange. Celui-ci force les deux enfants à essayer des bagues magiques qui les transportent dans un monde inconnu. Commence alors la plus extraordinaire des aventures ...");
 		books[2].setGenre(GenreBook.FANTASY);
 		books[3].setTitle("100 jours en enfer");
 		books[3].setAuthor("Robert Muchamore");
 		books[3].setCoverPath(pathCovers + "cherub-tome-1-100-jours-en-enfer-20428.jpg");
-		books[3].setSummary("James Choke est un adolescent violent et ...");
+		books[3].setSummary("James Choke est un adolescent violent et révolté, qui subit les moqueries de ses camarades de classes. Le jour où sa mère, délinquante mais dépressive, vient à mourir, il est placé dans un orphelinat tandis que sa demi-sœur, Lauren, est placée contre son gré sous la garde de son père à elle, Ron.\n" +
+				"\n" +
+				"Une surprise attend James à l’orphelinat. Certes, il n’est pas plus discipliné qu’avant, mais s’entend bien avec son partenaire de chambre, Kyle.\n" +
+				"\n" +
+				"Jusqu’au moment où sa vie, déjà instable, bascule totalement quand il se réveille dans une cellule.\n" +
+				"\n" +
+				"Kyle est en fait un agent de CHERUB en mission de recrutement pour s’être mal conduit. James réussira-t-il l’examen d’entrée ? Etes-vous partant pour 100 jours en Enfer ?\n" +
+				"\n" +
+				"Les agents de CHERUB ont entre 10 et 17 ans, ce qui leur permet de tromper la vigilance des adultes et de prendre au piège plusieurs criminels, déjouer des complots et obtenir de précieuses informations. Pour raison d’Etat ces enfants n’existent pas. ");
 		books[3].setGenre(GenreBook.ESPIONNAGE);
 		books[4].setTitle("Dune");
 		books[4].setAuthor("Frank Herbert");
 		books[4].setCoverPath(pathCovers + "le-cycle-de-dune-tome-1-dune-1477958.jpg");
-		books[4].setSummary("Sur Dune, la planète des sables, germe l'épice qui donne longévité et prescience. A cause ...");
+		books[4].setSummary("Sur Dune, la planète des sables, germe l'épice qui donne longévité et prescience. A cause de l'épice, tout l'empire galactique du Padishah Shaddam IV tourne autour de Dune, âprement convoitée pour les nobles maisons du Landsraad et la Guilde des Navigateurs.\n" +
+				"\n" +
+				"Leto Atreides, Duc et Cousin de l'Empereur, a reçu Dune en fief. Pour peu de temps. En 10191, il meurt assassiné. Mais son fils Paul, avec sa mère, trouve asile dans les repaires du peuple Fremen, indompté, invaincu, la lie de Dune pour certains, le sel de la terre pour d'autres. Paul grandit dans le désert et forge l'arme de sa vengeance.\n" +
+				"\n" +
+				"Mais ne va-t-il pas dépasser son but, lancer les légions Fremen en une effroyable croisade ? Il a, dit-on, le pouvoir de connaître l'avenir. Aura-t-il celui de l'éviter ?");
 		books[4].setGenre(GenreBook.SF);
 		books[5].setTitle("La Horde du contrevent");
 		books[5].setAuthor("Alain Damasio");
 		books[5].setCoverPath(pathCovers + "la-horde-du-contrevent-594679.jpg");
-		books[5].setSummary("Un groupe d'élite, formé dès l'enfance à faire face, part des confins d'une terre féroce...");
+		books[5].setSummary("Un groupe d'élite, formé dès l'enfance à faire face, part des confins d'une terre féroce, saignée de rafales, pour aller chercher l'origine du vent. Ils sont vingt-trois, un bloc, un nœud de courage : la Horde. Ils sont pilier, ailier, traceur, aéromaître et géomaître, feuleuse et sourcière, troubadour et scribe. Ils traversent leur monde debout, à pied, en quête d'un Extrême-Amont qui fuit devant eux comme un horizon fou.\n" +
+				"\n" +
+				"Expérience de lecture unique, La Horde du Contrevent est un livre-univers qui fond d'un même feu l'aventure et la poésie des parcours, le combat nu et la quête d'un sens profond du vivant qui unirait le mouvement et le lien. Chaque mot résonne, chaque, fuse : Alain Damasio joue de sa plume comme d'un pinceau, d'une caméra ou d'une arme...\n" +
+				"\n" +
+				"Chef-d'oeuvre porté par un bouche-à-oreille rare, le roman a été logiquement récompensé par le Grand Prix de l'Imaginaire.");
 		books[5].setGenre(GenreBook.SF);
 		books[6].setTitle("Le Simarillion");
 		books[6].setAuthor("J. R. R. Tomkien");
@@ -125,27 +148,43 @@ public class ProjetFilRougeApplication {
 		books[7].setTitle("Hypérion 1");
 		books[7].setAuthor("Dan Simmons");
 		books[7].setCoverPath(pathCovers + "les-cantos-dhyperion-tome-1-hyperion-1-5138.jpg");
-		books[7].setSummary("Quand les sept pèlerins se posent à Hypérion, le port spatial offre un spectacle de fin du monde...");
+		books[7].setSummary("Quand les sept pèlerins se posent à Hypérion, le port spatial offre un spectacle de fin du monde. Des millions de personnes s'entassent derrière les grilles : les habitants de la planète sont sûrs que le gritche va venir les prendre et ils veulent fuir. Mais l'Hégémonie ne veut rien savoir. Une guerre s'annonce et les routes du ciel doivent être dégagées. Et tout ce que le gouvernement a trouvé, c'est d'envoyer les sept pèlerins. La présidente le leur a dit d'emblée : Il est essentiel que les secrets des Tombeaux du Temps soient percés. C'est notre dernière chance. \" Mais les pèlerins n'y comprennent rien, et ne se connaissent même pas ! Heureusement, le voyage leur permettra de se rapprocher. Chacun raconte son histoire, et l'on s'aperçoit vite que nul n'a été pris au hasard. Celui qui a fait la sélection, au fil des confidences, parait avoir fait preuve d'une lucidité... diabolique. Et d'une cruauté... raffinée!");
 		books[7].setGenre(GenreBook.SF);
 		books[8].setTitle("Le Nom du Vent");
 		books[8].setAuthor("Patrick Rothfuss");
 		books[8].setCoverPath(pathCovers + "chronique-du-tueur-de-roi-premiere-journee-le-nom-du-vent-78244.jpg");
-		books[8].setSummary("J'ai libéré des princesses, j'ai incendié la ville de Trebon. J'ai suivi des pistes au clair de lune que personne n'ose évoquer durant le jour...");
+		books[8].setSummary("J'ai libéré des princesses, j'ai incendié la ville de Trebon. J'ai suivi des pistes au clair de lune que personne n'ose évoquer durant le jour. J'ai conversé avec les dieux, aimé des femmes et écrit des chansons qui font pleurer les ménestrels.\n" +
+				"\n" +
+				"J'ai été exclu de l'Université à un âge où l'on est encore trop jeune pour y entrer. J'y étais allé pour apprendre la magie, celle dont on parle dans les histoires.\n" +
+				"\n" +
+				"Je voulais apprendre le nom du vent.\n" +
+				"\n" +
+				"Mon nom est Kvothe.\n" +
+				"\n" +
+				"Vous avez du entendre parler de moi. ");
 		books[8].setGenre(GenreBook.FANTASY);
 		books[9].setTitle("Le Pion blanc des présages");
 		books[9].setAuthor("David Eddings");
 		books[9].setCoverPath(pathCovers + "la-belgariade-tome-1-le-pion-blanc-des-presages-4185093.jpg");
-		books[9].setSummary("Et les dieux créèrent l'homme, et chaque dieu choisit son peuple. Mais Torak, le dieu jaloux, vola...");
+		books[9].setSummary("Et les dieux créèrent l'homme, et chaque dieu choisit son peuple.\n" +
+				"\n" +
+				"Mais Torak, le dieu jaloux, vola l'Orbe d'Aldur, le joyau vivant façonné par l'aîné des dieux, et ce fut la guerre. Le félon fut châtié ; à Cthol Mishrak, la Cité de la Nuit, il dort toujours d'un long sommeil hanté par la souffrance. Le fleuve des siècles a passé sur les royaumes du Ponant. Les livres des présages sont formels : Torak va s'éveiller. Et justement l'Orbe disparaît pour la seconde fois.\n" +
+				"\n" +
+				"Que le maudit la trouve à son réveil et il établira son empire sur toutes choses. Belgarath le sorcier parviendra-t-il à conjurer le sort ? Dans cette partie d'échecs cosmique, il a réussi à préserver une pièce maîtresse : le dernier descendant des Gardiens de l'Orbe, désigné par les présages, mais qui n'est encore qu'un petit garçon. Un simple pion, et si vulnérable...");
 		books[9].setGenre(GenreBook.FANTASY);
 		books[10].setTitle("Le Seigneur Sha");
 		books[10].setAuthor("Erik L'Homme");
 		books[10].setCoverPath(pathCovers + "le-livre-des-etoiles-tome-2-le-seigneur-sha-728636.jpg");
-		books[10].setSummary("Guillemot rejoint le monastère de Gifdu afin d'y poursuivre son apprentissage de la magie. La Guilde ..");
+		books[10].setSummary("Guillemot rejoint le monastère de Gifdu afin d'y poursuivre son apprentissage de la magie. La Guilde des Sorciers envoie une expédition avec, à sa tête, Qadehar, pour mettre un terme aux menaces de l'Ombre. Mais l'attaque échoue.\n" +
+				"\n" +
+				"Dès lors, les événements se précipitent : Maître Qadehar doit s'enfuir. Un mystérieux personnage, le Seigneur Sha, s'introduit dans le monastère de Gifdu. Guillemot et ses fidèles amis sont pris au piège des redoutables Korrigans.\n" +
+				"\n" +
+				"Y aurait-il un traître dans la Guilde ? Qui se cache derrière le Seigneur Sha ? Guillemot aura besoin de tous ses talents d'Apprenti Sorcier dans ces nouvelles épreuves...");
 		books[10].setGenre(GenreBook.FANTASY);
 		books[11].setTitle("Le Messie de Dune");
 		books[11].setAuthor("Frank Herbert");
 		books[11].setCoverPath(pathCovers + "le-cycle-de-dune-tome-2-le-messie-de-dune-713.jpg");
-		books[11].setSummary("Paul Atréides a triomphé de ses ennemis. En douze ans de guerre sainte, ses Fremen ont conquis...");
+		books[11].setSummary("Paul Atréides a triomphé de ses ennemis. En douze ans de guerre sainte, ses Fremen ont conquis l'univers. Il est devenu l'empereur Muad'Dib. fresque un Dieu, puisqu'il voit l'avenir. Ses ennemis, il les connaît. Il sait quand et comment ils frapperont. Ils vont essayer de lui reprendre l'épice qui donne la prescience et peut-être de percer le secret de son pouvoir. Il peut déjouer leurs plans, mais voit plus loin encore. Il sait que tous les futurs possibles mènent au désastre. Il est hanté par la vision de sa propre mort. Et s'il n'avait le choix qu'entre plusieurs suicides ? Et s'il ruinait son œuvre en matant ses ennemis ? Peut-être n'y a-t-il pour le prescient pas d'autre liberté que celle du sacrifice...");
 		books[11].setGenre(GenreBook.SF);
 
 		return books;
